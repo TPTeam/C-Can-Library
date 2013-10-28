@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1370854241 source:/home/andrea/C-Workspace/C-Can-Library/canopenlib_linux_hw.cpp
+	<stdio.h>
+	<string.h>
+	<time.h>
+	"libpcan.h"
+	"canopenlib_linux_hw.h"
+
+1370430858 /home/andrea/C-Workspace/C-Can-Library/libpcan.h
+	"pcan.h"
+
+1297094196 /home/andrea/C-Workspace/C-Can-Library/pcan.h
+	<linux/types.h>
+	<linux/ioctl.h>
+
+1370854235 /home/andrea/C-Workspace/C-Can-Library/canopenlib_linux_hw.h
+	"CANopenLibDefines.h"
+	<pthread.h>
+
+1370508076 /home/andrea/C-Workspace/C-Can-Library/CANopenLibDefines.h
+
+1372780093 source:/home/tp/C-Workspace/C-Workspace/C-Can-Library/canopenlib_linux_hw.cpp
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<fcntl.h>
+	"libpcan.h"
+	"canopenlib_linux_hw.h"
+
+1372686110 /home/tp/C-Workspace/C-Workspace/C-Can-Library/libpcan.h
+	"pcan.h"
+
+1372686110 /home/tp/C-Workspace/C-Workspace/C-Can-Library/pcan.h
+	<linux/types.h>
+	<linux/ioctl.h>
+
+1372763177 /home/tp/C-Workspace/C-Workspace/C-Can-Library/canopenlib_linux_hw.h
+	"CANopenLibDefines.h"
+	<pthread.h>
+	"libpcan.h"
+
+1372686110 /home/tp/C-Workspace/C-Workspace/C-Can-Library/CANopenLibDefines.h
+
+1372955902 source:/home/tp/C-Workspace/final/C-Can-Library/canopenlib_linux_hw.cpp
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<fcntl.h>
+	"libpcan.h"
+	"canopenlib_linux_hw.h"
+
+1372949059 /home/tp/C-Workspace/final/C-Can-Library/libpcan.h
+	"pcan.h"
+
+1372949059 /home/tp/C-Workspace/final/C-Can-Library/pcan.h
+	<linux/types.h>
+	<linux/ioctl.h>
+
+1372949059 /home/tp/C-Workspace/final/C-Can-Library/canopenlib_linux_hw.h
+	"CANopenLibDefines.h"
+	<pthread.h>
+	"libpcan.h"
+
+1372949059 /home/tp/C-Workspace/final/C-Can-Library/CANopenLibDefines.h
+

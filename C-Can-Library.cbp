@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="C-Can-Library" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../workspace/CanOpen_Scala/canopenlib_linux_hw" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="libpcan.so;" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-fPIC" />
+					<Add directory="/home/andrea/C-Workspace/C-Can-Library/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="/home/andrea/C-Workspace/C-Can-Library/" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-lpthread" />
+					<Add library="./libpcan.so" />
+					<Add directory="/home/andrea/C-Workspace/C-Can-Library/" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/canopenlib_linux_hw" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fPIC" />
+					<Add directory="/home/andrea/C-Workspace/C-Can-Library/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="/home/andrea/C-Workspace/C-Can-Library/" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lpthread" />
+					<Add directory="/home/andrea/C-Workspace/C-Can-Library/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add directory="/home/andrea/C-Workspace/C-Can-Library/" />
+		</Linker>
+		<Unit filename="CANopenLibDefines.h" />
+		<Unit filename="canopenlib_linux_hw.cpp" />
+		<Unit filename="canopenlib_linux_hw.h" />
+		<Unit filename="libpcan.h" />
+		<Unit filename="pcan.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
