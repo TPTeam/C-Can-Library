@@ -153,6 +153,8 @@ canOpenStatus canPortOpenByName(int port, const char *devName)
   if ( port >= 0 && port < MAX_CAN_DEVICES ) {
     can_port_data_devices[port].handle = LINUX_CAN_Open(devName, O_RDWR);
     can_port_data_devices[port].opened = true;
+    //Removing existent filters if any
+    CAN_ResetFilter(can_port_data_devices[port].handle);
     return CANOPEN_OK;
   } else {
     return CANOPEN_ERROR_HW_NOT_CONNECTED;
